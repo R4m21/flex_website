@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact-Us</title>
+    <style>
+      * {
+        margin: 0%;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      h1 {
+        margin: 40px 35px auto;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        text-shadow: 1px 2px 5px #34495e;
+      }
+      #form {
+        width: 80vw;
+        margin: 100px auto;
+        padding: 10px;
+        border: 1px solid #ecf0f1;
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background-color: #ecf0f1;
+        box-shadow: 1px 2px 20px #95a5a6;
+      }
+      ul {
+        list-style: none;
+        margin: 20px 0;
+        padding: 10px 0;
+      }
+      ul li {
+        margin: 10px;
+        padding: 2px 0;
+        display: flex;
+        justify-content: end;
+      }
+      ul li lable {
+        flex: 1;
+        text-shadow: 1px 2px 5px #34495e;
+      }
+      ul li input {
+        flex: 8;
+        box-shadow: 1px 2px 5px #95a5a6;
+        padding: 5px;
+      }
+      button {
+        padding: 2px;
+        box-shadow: 1px 2px 2px #95a5a6;
+        border-radius: 4px;
+      }
+      @media screen and (max-width: 350px) {
+        h1 {
+          font-size: 1rem;
+          font-weight: 800;
+          margin: auto 0;
+          padding: 1px;
+        }
+        ul {
+          margin: 0;
+          padding: 0;
+        }
+        ul li {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+      @media screen and (min-width: 350px) {
+        ul li lable {
+        flex: 1;
+      }
+      ul li input {
+        flex: 3;
+      }
+      }
+      @media screen and (min-width: 500px) {
+        ul li lable {
+        flex: 1;
+      }
+      ul li input {
+        flex: 4;
+      }
+      }
+      @media screen and (min-width: 700px) {
+        ul li lable {
+        flex: 1;
+      }
+      ul li input {
+        flex: 6;
+      }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="form">
+      <h1>Contact-Us</h1>
+      <form action="">
+        <ul>
+          <li>
+            <lable for="name">Name</lable>
+            <input type="text" name="name" />
+          </li>
+          <li>
+            <lable for="className">Class Name</lable>
+            <input type="text" name="className" />
+          </li>
+          <li>
+            <lable for="email">Email</lable>
+            <input type="email" name="email" />
+          </li>
+          <li>
+            <button type="submit">Save</button>
+          </li>
+        </ul>
+      </form>
+    </div>
+  </body>
+</html>

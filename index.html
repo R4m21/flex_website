@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zoom Interiors</title>
+    <script
+      src="https://kit.fontawesome.com/38e42d65f7.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body{
+        display: grid;
+      }
+      /* flex-box using header */
+      #header1 {
+        padding: 12px 0;
+        display: flex;
+        justify-content: space-between;
+        background-color: #2ecc71;
+        color: #ecf0f1;
+        align-items: center;
+      }
+      ul {
+        list-style: none;
+      }
+      .list,
+      .rows,
+      .sub-section {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .list li {
+        margin: 0 5px;
+        padding: 0 2px;
+      }
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+      .read {
+        margin-bottom: 15px;
+      }
+
+      .read a {
+        padding: 8px;
+        background: #dfe6e9;
+      }
+      .read a:hover {
+        background: transparent;
+        border-radius: 4px;
+        border: 2px solid #b2bec3;
+      }
+
+      .sub-sec p {
+        margin-bottom: 20px;
+      }
+      /* now using flex-box in section */
+      section {
+        height: auto;
+      }
+      /* .rows { display: flex; } */
+      .cols1 {
+        background-color: #ffeaa7;
+        flex: 1;
+        margin: 0;
+        padding: 20px 10px;
+        font-size: 90%;
+        font-weight: lighter;
+      }
+      .cols2 {
+        border-color: #ecf0f1;
+        flex: 4;
+        padding: 10px;
+      }
+      /* cols1 part to style css */
+      .cols1 li {
+        padding: 5px;
+        border-bottom: 1px solid #b2bec3;
+      }
+
+      /*cols2 sub-sect using flex-box */
+      .sub-sec {
+        display: flex;
+        flex-direction: column;
+      }
+      .read {
+        align-items: flex-start;
+        margin-top: auto;
+      }
+
+      .heading {
+        margin: 5px 0;
+        padding: 5px 0;
+      }
+      p {
+        text-align: justify;
+      }
+
+      .spheading {
+        margin: 10px 0;
+        padding: 10px 0;
+      }
+      .sub-sec {
+        margin: 5px 5px;
+        padding: 8px;
+        border: 1px solid #dfe6e9;
+        flex: 1 1 32%;
+      }
+      /* all image in html page */
+      .image img {
+        width: 100%;
+        height: 230px;
+      }
+      .side-image{
+        height: 100%;
+      }
+      /* it is footer */
+      footer {
+        margin-top: auto;
+        padding: 15px 0;
+        font-weight: lighter;
+        text-align: center;
+        background-color: #2ecc71;
+      }
+      @media screen and (max-width: 500px) {
+        #header1,
+        .list,
+        .rows,
+        .sub-section {
+          flex-direction: column;
+        }
+        .sub-section,
+        .sub-sec {
+          margin-top: 10px;
+          margin-left: 0;
+          margin-right: 0;
+        }
+        .head1,
+        .head3 {
+          flex-direction: row;
+          padding: 15px;
+        }
+        .head2 {
+          font-size: 1.4rem;
+          margin-top: 60px;
+          order: -1;
+        }
+        .cols2 {
+          order: -1;
+        }
+        .heading {
+          font-size: 1.6rem;
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header id="header1">
+      <ul class="list head1">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="/tested/page/contact_us.html">Contact</a></li>
+      </ul>
+      <div class="head2">
+        <h1>Zoom Interiors</h1>
+      </div>
+      <ul class="list head3">
+        <li><i class="fab fa-facebook-f"></i></li>
+        <li><i class="fab fa-twitter"></i></li>
+        <li><i class="fab fa-google-plus-g"></i></li>
+      </ul>
+    </header>
+    <section class="rows">
+      <div class="cols1">
+        <ul>
+          <li><a href="#">Side Link</a></li>
+          <li><a href="#">Side Link</a></li>
+          <li><a href="#">Side Link</a></li>
+          <li><a href="#">Side Link</a></li>
+          <li><a href="#">Side Link</a></li>
+        </ul>
+        <div class="image side-image">
+          <img src="/tested/image/sidewallpaper.jpg" alt="sidewallpaper" />
+        </div>
+      </div>
+      <div class="cols2">
+        <div>
+          <h3 class="heading spheading">Welcome Our Website</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+            eligendi maiores unde expedita voluptatibus magni quia accusantium
+            aspernatur ab? Veritatis libero saepe numquam reiciendis blanditiis
+            at animi quibusdam magnam officia. Laboriosam, cupiditate. Quo
+            possimus molestiae adipisci nulla nobis ipsum aspernatur aut quaerat
+            quos sequi architecto iure suscipit ratione, laudantium voluptatem.
+            Reiciendis, modi culpa expedita tempora nisi dolorum amet ullam
+            aliquam. Doloremque modi in sint facere quam atque, saepe, ipsum eum
+            nam soluta qui est odio maiores! Ullam, sit, sequi quisquam dolor
+            optio cum ratione eaque eligendi recusandae magnam temporibus nihil.
+            Harum, eligendi perspiciatis. Deserunt asperiores exercitationem,
+            earum ea reprehenderit autem voluptatibus non sunt debitis odit qui
+            expedita natus veniam temporibus vero similique ut consequatur quis
+            repudiandae labore. Nostrum, nihil atque. Laboriosam, laborum?
+            Reprehenderit est omnis aliquid veniam numquam consequatur nulla
+            magni velit, quibusdam eum placeat aliquam libero delectus corporis
+            minus natus magnam, alias ut blanditiis impedit dolor praesentium
+            voluptatibus deleniti!
+          </p>
+        </div>
+        <h3 class="heading spheading">Our Service</h3>
+        <div class="sub-section">
+          <div class="sub-sec">
+            <div class="image">
+              <img src="/tested/image/wallapaper1.jpg" alt="wallapaper1" />
+            </div>
+            <h3 class="heading">Wallpaper</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatem iusto, consequuntur eveniet deleniti voluptate
+              voluptatibus nam! Porro fuga, quisquam laboriosam magni aliquam
+              facere quas assumenda pariatur asperiores similique
+              exercitationem. Pariatur.
+            </p>
+            <div class="read">
+              <a href="">Read More</a>
+            </div>
+          </div>
+          <div class="sub-sec">
+            <div class="image">
+              <img
+                src="/tested/image/blinds_wallpaper.jpg"
+                alt="blinds_wallpaper"
+              />
+            </div>
+            <h3 class="heading">Blinds</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatem iusto, consequuntur eveniet deleniti voluptate
+              voluptatibus nam! Porro fuga.
+            </p>
+            <div class="read">
+              <a href="">Read More</a>
+            </div>
+          </div>
+          <div class="sub-sec">
+            <div class="image">
+              <img src="/tested/image/carpet2.jpg" alt="carpet2" />
+            </div>
+            <h3 class="heading">Carpet</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatem iusto, consequuntur eveniet..
+            </p>
+            <div class="read">
+              <a href="">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div>Made By Maniram Chauhan</div>
+    </footer>
+  </body>
+</html>
